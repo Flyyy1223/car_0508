@@ -1,0 +1,67 @@
+body, html {
+    margin-left: 40px;   /* 清除預設的邊距 */
+    margin-right: 40px;
+    padding: 0;  /* 清除預設的內距 */
+}
+.logo {
+        display: block; /* 将图像设为块级元素 */
+        margin: 0 auto; /* 左右外边距设置为自动，实现水平居中 */
+        text-align: center; /* 文本居中对齐，也会使内联元素居中 */
+    }
+    
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex; /* ★ */
+    align-items: center; /* ★ */
+    justify-content: center;
+    text-align: justify;
+}
+.title_about{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex; /* ★ */
+    align-items: center; /* ★ */
+    justify-content: center;
+    text-align: justify;
+
+}
+.carousel-item img {
+    width: 300px;  /* 或您希望的任何具體寬度 */
+    height: 550px; /* 或您希望的任何具體高度 */
+    object-fit: cover; /* 保持圖片比例並填充整個容器 */
+}
+.start_button{
+    display: block;
+    margin: 20px auto;
+    color: black;
+}
+.Q{
+    font-size: 32px; /* 将字体大小增加到 32 像素 */
+}
+
+.container {
+    width: 80%; /* 设置宽度为页面宽度的80% */
+    margin: 0 auto; /* 居中显示 */
+}
+#customRange1 {
+    width: 80%; /* 设置宽度为容器宽度的100% */
+    margin-bottom: 20px; /* 设置下边距 */
+}
+#customRange2 {
+    width: 80%; /* 设置宽度为容器宽度的100% */
+    margin-bottom: 20px; /* 设置下边距 */
+}
+#customRange3 {
+    width: 80%; /* 设置宽度为容器宽度的100% */
+    margin-bottom: 20px; /* 设置下边距 */
+}
+
+#rangeValue {
+    display: block; /* 设置为块级元素 */
+    text-align: center; /* 文本居中对齐 */
+}
+.button{
+    font-size: 16px; /* 设置字体大小 */
+    padding: 10px 20px; /* 设置内边距 */
+}
