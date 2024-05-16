@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        /* 添加按钮和选定分数的布局样式 */
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px; /* 调整按钮顶部的间距 */
+        }
+        .button {
+            flex: 1;
+            /* 添加按钮样式以调整大小 */
+            padding: 8px 16px; /* 调整按钮内边距 */
+            font-size: 14px; /* 调整按钮字体大小 */
+        }
+        #selectedValues {
+            margin-top: 10px; /* 调整所选分数顶部间距 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./image/logo.png">
+    </header>
+    
+    <p class="Q">Q3.您的汽車用途是商業用途 （0:非常同意,10:非常不同意）</p>
+    <label for="customRange1" class="form-label">您的分數</label>
+    <input type="range" class="form-range" min="0" max="10" step="1" id="customRange1">
+    <span id="rangeValue1">5</span>
+    
+    
+ 
+    
+
+    <!-- 底部元素用於顯示所選數字 -->
+    <div class="button-container">
+        <!-- 添加一个按钮 -->
+        <a href="detail4.html">
+        <button class="button" id="endQuiz">下一題</button>
+    </div>
+    <div id="selectedValues"></div>
+
+    
+</body>
+</html>
