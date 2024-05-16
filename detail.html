@@ -34,40 +34,19 @@
     <input type="range" class="form-range" min="0" max="10" step="1" id="customRange1">
     <span id="rangeValue1">5</span>
     
-    <p class="Q">Q2:您的汽車用途是日常通勤（0:非常同意,10:非常不同意）</p>
-    <label for="customRange2" class="form-label">您的分數</label>
-    <input type="range" class="form-range" min="0" max="10" step="1" id="customRange2">
-    <span id="rangeValue2">5</span>
+    
  
-    <p class="Q">Q3:您的汽車用途是日常通勤（0:非常同意,10:非常不同意）</p>
-    <label for="customRange3" class="form-label">您的分數</label>
-    <input type="range" class="form-range" min="0" max="10" step="1" id="customRange3">
-    <span id="rangeValue3">5</span>
+    
 
     <!-- 底部元素用於顯示所選數字 -->
     <div class="button-container">
         <!-- 添加一个按钮 -->
-        <button class="button" id="endQuiz">結束測驗</button>
+        <a href="detail2.html">
+        <button class="button" id="endQuiz">下一題</button>
     </div>
     <div id="selectedValues"></div>
 
-    <script>
-        const rangeInputs = document.querySelectorAll('.form-range');
-        const rangeValues = document.querySelectorAll('[id^="rangeValue"]');
-        const selectedValues = []; // 存儲所選數字的全局變量
-
-        rangeInputs.forEach((input, index) => {
-            input.addEventListener('input', function() {
-                rangeValues[index].textContent = this.value;
-                selectedValues[index] = this.value;
-            });
-        });
-
-        // 添加事件监听器来处理按钮点击事件
-        document.getElementById('endQuiz').addEventListener('click', function() {
-            const selectedValuesElement = document.getElementById('selectedValues');
-            selectedValuesElement.textContent = "所選分數：" + selectedValues.join(", ");
-        });
-    </script>
+    
 </body>
 </html>
+
